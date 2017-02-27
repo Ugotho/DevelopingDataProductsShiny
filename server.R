@@ -19,7 +19,6 @@ shinyServer(function(input, output) {
     
     SPX <- quotesDF$spx[quotesDF$date>=startDate & quotesDF$date<=endDate]
     spx <- 100.0*(SPX-SPX[1])/SPX[1]
-    spxReturn = spx[length(spx)]
     
     GLD <- quotesDF$gld[quotesDF$date>=startDate & quotesDF$date<=endDate]
     gld <- 100.0*(GLD-GLD[1])/GLD[1]
@@ -54,7 +53,8 @@ shinyServer(function(input, output) {
     
     
     plot(subQuotesDF()$date, subQuotesDF()$spx, col="blue", type="l", 
-         xlab="Date", ylab="Percent Change", ylim=c(minLimit, maxLimit))
+         xlab="Date", ylab="Percent Change", ylim=c(minLimit, maxLimit), 
+         sub="[NOTE: The red vertical line marks 2009-03-09, the lowest point in the S&P 500]")
     lines(subQuotesDF()$date, subQuotesDF()$gld, col="orange")
     lines(subQuotesDF()$date, subQuotesDF()$oil, col="black")
     lines(subQuotesDF()$date, subQuotesDF()$o, col="green")
@@ -65,9 +65,8 @@ shinyServer(function(input, output) {
     abline(v=as.Date("2009-03-09"), col="red")
     legend("topleft",legend=c("S&P 500", "Gold", "Oil", "Realty", "Bonds"), 
            col=c("blue", "orange", "black", "green", "brown"), lty=1, cex=0.8)
-
   })
-
+  
   output$dateRange <- renderText({
     paste("Over the date range", input$date1, "to", input$date2)
   })

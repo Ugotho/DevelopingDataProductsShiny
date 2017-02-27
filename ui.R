@@ -10,16 +10,7 @@ shinyUI(fluidPage(
   
   sidebarLayout(
     sidebarPanel(
-      h4("During the 'Great Recession' the stock market dropped to a low on 
-     2009-03-09 (indicated by a vertical line on the plot below). Most markets 
-         rebounded from these lows in the intervening years. The plot below shows 
-         the percent gain or percent loss for each of five sectors of the market: 
-         the S&P 500, the price of gold, the price of oil, real estate income 
-         trusts, and the total bond market. By adjusting the 'Start Date' slider 
-         and the 'End Date' the user can observe the percent gain/loss of any 
-         of these sectors over any date range within the span 2008-01-02 to 2017-02-17."), 
-      
-      
+
       h4("Dates must fall in the range 2008-01-02  to  2017-02-17"),
       h4(" "), 
 
@@ -27,7 +18,7 @@ shinyUI(fluidPage(
       sliderInput("date1", "Start Date", as.Date("2008-01-02"), 
                   as.Date("2017-02-17"), as.Date("2009-03-09")),
       sliderInput("date2", "End Date", as.Date("2008-01-02"), 
-                  as.Date("2017-02-17"), as.Date("2017-02-17"))
+                  as.Date("2017-02-17"), as.Date("2017-02-17"))  
       
     ), 
     
@@ -43,7 +34,8 @@ shinyUI(fluidPage(
       textOutput("gldText"), 
       textOutput("oilText"), 
       textOutput("oText"), 
-      textOutput("bndText")
+      textOutput("bndText") 
+      
     )
   )
 ))
