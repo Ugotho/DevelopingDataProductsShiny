@@ -1,7 +1,7 @@
 # DevelopingDataProductsShiny
 **Investment Sectors' Gains/Losses Since The Great Recession [shiny project]**
 
-During the 'Great Recession' the stock market dropped to a low on March 9, 2009 (2009-03-09). Most markets rebounded from these lows in the intervening years. SectorTracker is a shiny app that generates a plot showing the percent gain or percent loss for each of five sectors of the market: the S&P 500, the price of gold, the price of oil, real estate income trusts, and the total bond market. By adjusting the 'Start Date' slider and the 'End Date' slider the user can observe the percent gain/loss of all of these sectors over any date range within the span 2008-01-02 to 2017-02-17. These gains/losses are shown visually in a plot and numerically in the text below the plot.
+During the 'Great Recession' the stock market dropped to a low on March 9, 2009. Most markets rebounded from these lows in the intervening years. SectorTracker is a shiny app that generates a plot showing the percent gain or percent loss for each of five sectors of the market: the S&P 500, the price of gold, the price of oil, real estate income trusts, and the total bond market. By adjusting the 'Start Date' slider and the 'End Date' slider the user can observe the percent gain/loss of all of these sectors over any date range within the span 2008-01-02 to 2017-02-17. These gains/losses are shown visually in a plot and numerically in the text below the plot. A vertical red line on the plot marks the S&P 500's lowest point on 2009-03-09.
 
 The SectorTracker app contains within it the file quotesDF, a data.frame with the columns:<br>
  - *date* - Dates in the format yyyy-mm-dd ranging from 2008-01-02 to 2017-02-17<br>
