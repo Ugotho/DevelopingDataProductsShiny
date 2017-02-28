@@ -6,12 +6,14 @@ shinyUI(fluidPage(
   
   # Application title
   titlePanel("Investment Sectors' Gains/Losses Since The Great Recession"),
-  
+  a(href="http://rpubs.com/Ugotho/254252", "Click here for SectorTracker documentation"),
+  br(),
+  br(),
   
   sidebarLayout(
     sidebarPanel(
 
-      h4("Dates must fall in the range 2008-01-02  to  2017-02-17"),
+      h3("Dates must fall in the range 2008-01-02  to  2017-02-17"),
       h4(" "), 
 
       # Use two sliders to establish a range of dates
@@ -25,7 +27,7 @@ shinyUI(fluidPage(
     mainPanel(
       # Create a line plot of the five sectors gains with the date range
       plotOutput("investPlot"), 
-      
+      br(),
       # Display the range of dates being used
       textOutput("dateRange"), 
       

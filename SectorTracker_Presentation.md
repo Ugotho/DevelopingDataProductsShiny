@@ -3,6 +3,12 @@ SectorTracker App
 author: William D. Downs
 date: February 26, 2017
 autosize: true
+<br>&nbsp;
+<br>&nbsp;
+<a href="https://ugotho.shinyapps.io/SectorTracker/", target="new_window">Click here to open SectorTracker</a>
+<br>&nbsp;
+<br>&nbsp;
+See the full code and documentation for SectorTracker at <a href="http://github.com/Ugotho/DevelopingDataProductsShiny", target="new_window">http://github.com/Ugotho/DevelopingDataProductsShiny</a>
 
 A Tool for Understanding the Market After a Collapse
 ========================================================
@@ -37,12 +43,11 @@ Choose a Range of Dates with Two Simple Sliders
 By adjusting the 'Start Date' slider and the 'End Date' slider the user can observe the percent gain/loss of all five sectors of the market over any date range within the span 2008-01-02 to 2017-02-17. 
 
 ![Caption for the picture.](./sliders.png)
-```
 
 Finally, SectorTracker Delivers both a Plot and Numerical Readouts
 ========================================================
-These gains/losses are shown visually in a plot and numerically in the text below the plot. A vertical red line will mark the S&P 500's lowest point on 2009-03-09.<br><br>
+These gains/losses are shown visually in a plot and numerically in the text below the plot. A vertical red line will mark the S&P 500's lowest point on 2009-03-09.<br>
 [Generated on-the-fly from the code used in the SectorTracker]
-
 ![plot of chunk unnamed-chunk-2](SectorTracker_Presentation-figure/unnamed-chunk-2-1.png)
+
 

@@ -54,7 +54,7 @@ shinyServer(function(input, output) {
     
     plot(subQuotesDF()$date, subQuotesDF()$spx, col="blue", type="l", 
          xlab="Date", ylab="Percent Change", ylim=c(minLimit, maxLimit), 
-         sub="[NOTE: The red vertical line marks 2009-03-09, the lowest point in the S&P 500]")
+         sub="[NOTE: The red vertical line marks 2009-03-09, the lowest point for the S&P 500]")
     lines(subQuotesDF()$date, subQuotesDF()$gld, col="orange")
     lines(subQuotesDF()$date, subQuotesDF()$oil, col="black")
     lines(subQuotesDF()$date, subQuotesDF()$o, col="green")

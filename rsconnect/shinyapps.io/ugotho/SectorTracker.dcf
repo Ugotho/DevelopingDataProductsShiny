@@ -3,8 +3,9 @@ title: SectorTracker
 account: ugotho
 server: shinyapps.io
 appId: 159438
-bundleId: 726220
+bundleId: 727432
 url: https://ugotho.shinyapps.io/SectorTracker/
-when: 1488181723.46525
+when: 1488245453.85574
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: Documentation_SectorTracker.html|Documentation_SectorTracker.Rmd|LICENSE|README.md|SectorTracker_Presentation-rpubs.html|SectorTracker_Presentation.md|SectorTracker_Presentation.Rpres|sliders.png|SectorTracker_Presentation-figure/unnamed-chunk-1-1.png|SectorTracker_Presentation-figure/unnamed-chunk-2-1.png|SectorTracker_Presentation-figure/unnamed-chunk-3-1.png|SectorTracker_Presentation-figure/unnamed-chunk-4-1.png
